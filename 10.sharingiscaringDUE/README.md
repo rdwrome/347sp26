@@ -9,5 +9,4 @@
 - Mariia + Ashlyn
 - Romero + Hanyoung + Lilith
 
-# DUE FOR IN-CLASS PERFORMANCE ON DECEMBER 5
-***if you want to play the final concert, you must perform in class on DECEMBER 5. EVERYTHING IS DUE DECEMBER 5 for REAL***
+# DUE FOR IN-CLASS PERFORMANCE ON APRIL 30
