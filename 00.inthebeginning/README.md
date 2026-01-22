@@ -3,8 +3,6 @@
 - Big Picture
 - Introductions
 - GitHub vs Canvas
-  - everyone in the GitHub
-  - clone this repo
 
 ## Syllabus
 
