@@ -12,8 +12,8 @@
 
 ## Digital Audio 101 
 - acoustic, analog, digital
-- pitch, amplitude, timbre
 - transducers
+- pitch, amplitude, timbre
 - busses
 - A/D, D/A
 - sample rates
