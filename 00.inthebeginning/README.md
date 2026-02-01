@@ -2,7 +2,7 @@
 
 - Big Picture
 - Introductions
-- GitHub vs Canvas
+- Git & Canvas
 
 ## Syllabus
 

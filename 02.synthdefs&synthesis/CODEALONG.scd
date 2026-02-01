@@ -65,7 +65,7 @@ x.free;
 // Subtractive Synthesis
 
 (
-SynthDef('simplesubsynth', {
+SynthDef('rdRLPF', {
 	var sig;
 	// Filtered saw, cutoff/reciprocal of Q controlled by mouse
 	sig = RLPF.ar(
@@ -157,6 +157,15 @@ x.set(\gate, 0);
   - Array: fixed size collection (most common)
   - List: variable size collection */
 
+// arrays
+(0..4)    // -> [ 0, 1, 2, 3, 4 ], inclusive of both endpoints
+(1,3..10) // -> [ 1, 3, 5, 7, 9 ]
+4.dup(8)  // -> [ 4, 4, 4, 4, 4, 4, 4, 4 ]
+{ |i| i ** 2 }.dup(8)  // -> [ 0, 1, 4, 9, 16, 25, 36, 49 ]
+//binary and unary operators, when applied to arrays, are broadcast to the array's elements:
+[1, 2, 3, 4] + 4   // -> [ 5, 6, 7, 8 ]
+[3, 4, 5] * [1, 6, 8]  // -> [ 3, 24, 40 ]
+
 // Additive Synthesis with Array.fill(<num>,{arg i; <code>}) and Mix.ar
 
 (
@@ -205,3 +214,9 @@ b = Buffer.loadCollection(s, ~wt);
 )
 
 {Osc.ar(b, 30) * 0.2 ! 2}.play;
+
+/* RUNNING .scd file from the command line
+- file has to have *no* interactivity
+- open IDE, boot server
+- /Applications/SuperCollider.app/Contents/MacOS/sclang /Users/rrome/Documents/GitHub/347sp26/02.synthdefs&synthesis/kiwi.scd
+
