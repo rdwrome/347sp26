@@ -217,6 +217,11 @@ b = Buffer.loadCollection(s, ~wt);
 
 /* RUNNING .scd file from the command line
 - file has to have *no* interactivity
-- open IDE, boot server
-- /Applications/SuperCollider.app/Contents/MacOS/sclang /Users/rrome/Documents/GitHub/347sp26/02.synthdefs&synthesis/kiwi.scd
+- IN TERMINAL:
+/Applications/SuperCollider.app/Contents/MacOS/sclang
+- THEN IN TERMINAL from sc3>:
+s.boot;
+- THEN IN TERMINAL:
+{SinOsc.ar(440)}.play
+
 
