@@ -4,10 +4,6 @@ Using *only* 140 characters, make an interesting sound or generative algorithm w
 
 [Use this sc code as a template for your sound or generative algorithm.](https://ccrma.stanford.edu/wiki/SuperCollider_Tweets)
 
-### Steps to submit via GitHub+Canvas
-  1. Make a folder in your GitHub private class repository named after the assignment (i.e. {yourusername}/sc/140, etc.)
-  2. Commit all parts of your assignment (code+documentation) into the assignment repository folder
-  3. Submit the link for the assignment repository folder in Canvas
 ### Documentation outline
   - always in Markdown as a .md file
   - what you did
