@@ -12,7 +12,7 @@ SynthDef("kiwi", { // name it
 
 x = Synth("kiwi",[\pitch,60.midicps, \pan, -1]);
 
-x.set(\pitch,30.midicps, \pan, 0);
+x.set(\pitch,60.midicps, \pan, 1);
 
 x.free;
 
@@ -28,7 +28,7 @@ SynthDef("amkiwi", {
 )
 
 x = Synth("amkiwi")
-x.set(\genfreq, 330, \modfreq, 56);
+x.set(\genfreq, 220, \modfreq, 1);
 x.free;
 
 // Frequency Modulation Synthesis
@@ -44,7 +44,7 @@ SynthDef("fmkiwi", {
 )
 
 x = Synth("fmkiwi")
-x.set(\genfreq, 330, \modfreq, 56);
+x.set(\genfreq, 330, \modfreq, 511);
 x.free;
 
 // Frequency Modulation Synthesis with depth/index as argument
@@ -58,7 +58,7 @@ SynthDef("fmwdepthkiwi", {
 )
 
 x = Synth("fmwdepthkiwi")
-x.set(\genfreq, 330, \modfreq, 56, \modamp, 1.7);
+x.set(\genfreq, 330, \modfreq, 56, \modamp, 9);
 x.free;
 
 
@@ -126,7 +126,7 @@ SynthDef('subwithunsustain', {
 	sig = RLPF.ar(
 		Saw.ar(200),
 	);
-	env = Env.triangle(1, 1);
+	env = Env.triangle(10, 3);
 	Out.ar(0, Pan2.ar(sig*EnvGen.kr(env, doneAction:2)));
 }).add;
 )
@@ -151,7 +151,7 @@ x = Synth(\subwithsustain);
 // release it
 x.set(\gate, 0);
 
-
+// WE STOPPED HERE RACHEL
 
 /* arrays vs lists
   - Array: fixed size collection (most common)
@@ -225,3 +225,4 @@ s.boot;
 {SinOsc.ar(440)}.play
 
 
+// 140 character DUE in 2 weeks!

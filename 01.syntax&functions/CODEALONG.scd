@@ -50,7 +50,7 @@ if(2 + 2 == 4, { "Nice" }, { "What" }).postln;
 
 // case
 (
-x = 13;
+x = 1002;
 
 case
 { x < 0 }      { "It's negative".postln; }
@@ -121,8 +121,8 @@ https://doc.sccode.org/Guides/Tour_of_UGens.html
 
 (
 ~orange={
-	//arg pitch=166; /* PIRATE vs PIPE NOTATION a la rachelle */
-	| pitch=220 |
+	arg pitch=166; /* PIRATE vs PIPE NOTATION a la rachelle */
+	// | pitch=220 |
 	SinOsc.ar(pitch);
 }.play; // .play will play it
 )
