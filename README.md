@@ -13,7 +13,7 @@ LMSC-261 & MTEC-111 are prerequisites.
 
 #### analysis how-to and 140 due
 
-#### guest: Kosmas or Luisa? TBD
+#### guest: [Kosmas Giannoutakis](https://www.kosmasgiannoutakis.art/portfolio/live-coding-music-with-brain-control-interface/)
 
 #### analysis presentations
 
@@ -27,6 +27,8 @@ LMSC-261 & MTEC-111 are prerequisites.
 - final project proposal due
 
 #### OPTIONAL CONCERT APRIL 18 
+
+#### multichannel
 
 #### sharing is caring
 - final project presentations
@@ -44,7 +46,7 @@ LMSC-261 & MTEC-111 are prerequisites.
 - [SuperCollider GitHub "Learn" Tutorial [SCGL]](https://github.com/supercollider/learn)
 - [David Michael Cottle's Book [DMC]](https://rhoadley.net/courses/tech_resources/supercollider/tutorials/cottle/CMSC7105.pdf)
 - [The Designing Sound in SuperCollider Book [DS]](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider)
-- [Eli Fieldsteel's Book EF](https://global.oup.com/academic/product/supercollider-for-the-creative-musician-9780197616994?cc=us&lang=en&)
+- [Eli Fieldsteel's Book [EF]](https://global.oup.com/academic/product/supercollider-for-the-creative-musician-9780197616994?cc=us&lang=en&)
 
 ## Assignments and Grading
 Description|Grade
@@ -80,7 +82,7 @@ Sharing is Caring Project|20%
 - Email: [rrome@berklee.edu](rrome@berklee.edu)
 - Phone: 336.355.1993
 - Office Hours:
-	- Mondays 1-3pmEST.
+	- Mondays 2-4pmEST.
 	- Meetings will *always* take place in person at 1126 Boylston Room 208 (never on Zoom).
 	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.app.google/uHYL8MRLPpP5ABpH9)
 	- If you are not available during my office hour, you are welcome to use Berklee Google Calendar (be signed into your own account and search for "r.d.w.rome") to look at my whole calendar and make an appointment that way. It is up-to-date; no need to email me. Just drop the appointment in my calendar.
