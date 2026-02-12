@@ -1,6 +1,6 @@
 # 140 character assignment
 
-Using *only* 140 characters, make an interesting sound or generative algorithm with SuperCollider. Document your code using the outline below (25% of your grade). Be prepared to present it in class (25% of your grade).
+Using *only* 140 characters (not including spaces), make an interesting sound or generative algorithm with SuperCollider. Document your code using the outline below (25% of your grade). Be prepared to present it in class (25% of your grade).
 
 [Use this sc code as a template for your sound or generative algorithm.](https://ccrma.stanford.edu/wiki/SuperCollider_Tweets)
 

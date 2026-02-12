@@ -151,20 +151,18 @@ x = Synth(\subwithsustain);
 // release it
 x.set(\gate, 0);
 
-// WE STOPPED HERE RACHEL
-
 /* arrays vs lists
   - Array: fixed size collection (most common)
   - List: variable size collection */
 
 // arrays
 (0..4)    // -> [ 0, 1, 2, 3, 4 ], inclusive of both endpoints
-(1,3..10) // -> [ 1, 3, 5, 7, 9 ]
-4.dup(8)  // -> [ 4, 4, 4, 4, 4, 4, 4, 4 ]
-{ |i| i ** 2 }.dup(8)  // -> [ 0, 1, 4, 9, 16, 25, 36, 49 ]
+(1,5..19) // -> [ 1, 3, 5, 7, 9 ]
+4.dup(8)  // -> [ 4, 4, 4, 4, 4, 4, 4, 4 ] (use for durations!)
+{ |i| i ** 2 }.dup(8)  // -> [ 0, 1, 4, 9, 16, 25, 36, 49 ] (use for harmonics!)
 //binary and unary operators, when applied to arrays, are broadcast to the array's elements:
 [1, 2, 3, 4] + 4   // -> [ 5, 6, 7, 8 ]
-[3, 4, 5] * [1, 6, 8]  // -> [ 3, 24, 40 ]
+[3, 4, 5] * [1, 6, 8]  // -> [ 3, 24, 40 ](use for convolution!)
 
 // Additive Synthesis with Array.fill(<num>,{arg i; <code>}) and Mix.ar
 
@@ -206,16 +204,17 @@ x = Synth('helprd-dynKlang');
 x.setn(\freqs, Array.rand(4, 500, 2000));
 x.setn(\amps, Array.rand(4, 0.01, 0.25));
 
-// wave tables are the heart of computer music!
+// wave tables are the heart of computer music! RACHEL THIS IS BUSTED
 // wave table based on Fieldsteel p.94
 (
 ~wt = Signal.sineFill(400, [1], [0]).asWavetable;
 b = Buffer.loadCollection(s, ~wt);
 )
 
-{Osc.ar(b, 30) * 0.2 ! 2}.play;
+{Osc.ar(b, 30) * 0.2}.play;
 
 /* RUNNING .scd file from the command line
+- this is how you could run an installation on a raspberrypi!
 - file has to have *no* interactivity
 - IN TERMINAL:
 /Applications/SuperCollider.app/Contents/MacOS/sclang
