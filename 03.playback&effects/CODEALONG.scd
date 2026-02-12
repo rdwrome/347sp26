@@ -22,7 +22,7 @@
 	sig=PlayBuf.ar( // PlayBuf will play a sound in a buffer
 		numChannels:2, // we are dealing with stereo samples, so 2 channels
 		bufnum:~kalimba, // the buffer
-		rate: 0.5,
+		rate: -1,
 		loop:1,
 	);
 	Out.ar(0,sig); // send to Out UGen to channel 0 (default speakers)
@@ -83,7 +83,7 @@ SynthDef("musicboxb", { |bufnum = 0|
 
 	var sig, rate;
 
-	rate = BufRateScale.kr(bufnum)*MouseX.kr(0.9,1.1); // use the mouse to modulate the rate
+	rate = BufRateScale.kr(bufnum)*MouseX.kr(0.3,2); // use the mouse to modulate the rate
 
 	sig=PlayBuf.ar(
 		numChannels:2,
@@ -98,7 +98,7 @@ SynthDef("musicboxb", { |bufnum = 0|
 
 ~box=Buffer.read(s,thisProcess.nowExecutingPath.dirname++"/musicbox.wav");
 
-x=Synth("musicboxb", [\bufnum, ~box]); // will start playing
+x=Synth("musicboxb", [\bufnum, ~me]); // will start playing
 
 // TRY! try putting the modulation you created into this synthdef and playing
 
@@ -334,4 +334,11 @@ s = Server.local.waitForBoot({
 
 
 Synth.new(\RmOctaver) ;
+
+SynthDef.new(\RmOctaver, { var in, out = 0, freq, hasFreq ;
+		in = SoundIn.ar(0) ;
+		# freq, hasFreq = Pitch.kr(in) ;
+		Out.ar(out, SinOsc.ar(freq: freq*0.5)*in+in);
+	}).add ;
+
 
