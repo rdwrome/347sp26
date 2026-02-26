@@ -10,3 +10,5 @@
 
 # choose YOUR topic!
 - Dylan: Nick Collins' after goeyvaerts
+- James: spacelab
+- Mike: Nick Collins' stockhausen
