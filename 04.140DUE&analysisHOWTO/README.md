@@ -9,3 +9,4 @@
 ## [Metacortical Modulations by Kosmas Giannoutakis](https://www.kosmasgiannoutakis.art/portfolio/live-coding-music-with-brain-control-interface/)
 
 # choose YOUR topic!
+- Dylan: Nick Collins' after goeyvaerts
