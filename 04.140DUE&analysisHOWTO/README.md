@@ -12,3 +12,6 @@
 - Dylan: Nick Collins' after goeyvaerts
 - James: spacelab
 - Mike: Nick Collins' stockhausen
+- Will: Jaxa's b4[|7
+- Annika: Muse Score's underwater
+- Vanessa: Mads' Fverb
