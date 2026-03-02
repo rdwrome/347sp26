@@ -4,10 +4,14 @@
 - the [SuperCollider Message Board](https://scsynth.org/) is a great place to find a work to get started.
 - DOCUMENTATION FOR SUBMISSION should be a MarkDown file of all sources you used as hyperlinks.
 
-## who's got dibs:
-- Massimo: Autohausen by Nick Collins
-- Lilith: troll star on the roof by Luisa Mei
-- Ashlyn: SuperCollide Me by Luisa Mei
-- Hanyoung: Dimensions by Analog Tara
-- Mariia:
-- Michael: 
+# dibs
+- Dylan: Nick Collins' after goeyvaerts
+- James: spacelab
+- Mike: Nick Collins' stockhausen
+- Will: Jaxa's b4[|7
+- Annika: Muse Score's underwater
+- Vanessa: Mads' Fverb
+- Zoe: birb
+- KP: 
+- Neil: 
+- Kevin:
