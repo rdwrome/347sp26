@@ -12,6 +12,6 @@
 - Annika: Muse Score's underwater
 - Vanessa: Mads' Fverb
 - Zoe: birb
-- KP: 
-- Neil: 
+- KP: Sam Pluta's slays well with others
+- Neil: redFrik's minimalish sketch
 - Kevin:

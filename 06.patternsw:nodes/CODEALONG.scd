@@ -158,8 +158,6 @@ e.mute; // keeps playing, but replaces notes with rests
 e.unmute;
 )
 
-// WHAT IS YOUR CODE ANALYSIS PROJECT?
-
 /*Simple Pattern UGens to go with PBind from https://doc.sccode.org/Browse.html#Streams-Patterns-Events
   - **Pseq**
   - Goes through sequence */
@@ -329,4 +327,35 @@ s.waitForBoot{
 )
 
 
-// PROXY SPACE!
+// PROXY SPACE RACHEL CODE
+p = ProxySpace.push(s);
+p.fadeTime = 3.0;
+(
+SynthDef('dulcimer', { |out, amp = 0.1, freq = 440, decay = 5, coef = 0.1, pos = 0.5 |
+
+var sig = Pluck.ar(
+        PinkNoise.ar(amp),
+        LatoocarfianN.ar(0),
+        0.1,
+        freq.reciprocal,
+        decay,
+        coef);
+var env = EnvGen.kr(Env.linen(0, decay, 0), doneAction: 2);
+    Out.ar(out, PanAz.ar(2, sig*env, pos)); // NUM CHAN
+}).add;
+)
+(
+~fish =
+Pbind(
+	\instrument, 'dulcimer',
+	\scale, Scale.minor,
+	\degree, Ppoisson(7, inf),
+	\amp, Pwhite(0.1, 0.7),
+	\octave, Prand([3,4], inf),
+    \decay, Pwhite(7, 12),
+    \coef, Pwhite(0.01, 0.1),
+	\dur, Prand([0.13, 0.27, 0.38, 0.76], inf)
+)
+)
+~fish.play;
+~fish.free(6);
