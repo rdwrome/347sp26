@@ -94,7 +94,7 @@ t.play;    // should pick up with the next note
 
 (
 {8.do{arg i; Synth(\bleep,
-	[\note,rrand(48,84) ,\amp, rrand(0.25,0.75)]); 2.wait} }.fork(TempoClock(5))
+	[\note,rrand(48,84) ,\amp, rrand(0.25,0.75)]); 2.wait} }.fork(TempoClock(0.5))
 )
 
 // Using a Routine, Task, or a Fork, make a simple patch to share with the room

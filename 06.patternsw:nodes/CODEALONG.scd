@@ -46,7 +46,7 @@ Pbind(
 (
 Pbind(
   \midinote, Pseq([60, 60, 67, 67, 69, 69, 67, 65, 65, 64, 64, 62, 62, 60,67, 67, 65, 65, 64, 64, 62,67, 67, 65, 65, 64, 64, 62,60, 60, 67, 67, 69, 69, 67, 65, 65, 64, 64, 62, 62, 60]),
-	\dur, (Pseq([1, 1, 1, 1, 1, 1, 2], 6)*0.6)
+	\dur, (Pseq([1, 1, 1, 1, 1, 1, 2], 6)*0.3)
 ).play
 )
 
@@ -81,8 +81,8 @@ var a = Pseq([0, 0, 4, 4, 5, 5, 4, 3, 3, 2, 2, 1, 1, 0]);
 var b = Pseq([4, 4, 3, 3, 2, 2, 1]);
 
 Pbind(
-  \scale, Scale.prometheus, // lc
-  \root, 6, // lc
+  \scale, Scale.gong, // lc
+  \root, 4, // lc
   \octave, 5,
   \degree, a ++ b ++ b ++ a,
 	\dur, (Pseq([1, 1, 1, 1, 1, 1, 2], 6))*0.5,
@@ -140,7 +140,7 @@ SynthDef(\cfstring1, { arg i_out, freq = 360, gate = 1, pan, amp=0.1;
     eg = EnvGen.kr(Env.asr(1, 1, 1), gate, doneAction: Done.freeSelf);
     out = eg * RLPF.ar(osc, fc, 0.1);
     #a, b = out;
-    Out.ar(i_out, Mix.ar(PanAz.ar(4, [a, b], [pan, pan+0.3])));
+    Out.ar(i_out, Mix.ar(PanAz.ar(2, [a, b], [pan, pan+0.3])));
 }).add;
 
 e = Pbind(
@@ -265,6 +265,19 @@ Prand([a, b, c], inf).play;
 // change the events while playing
 c[\freq] = [900, 1002, 1102];
 c[\freq] = [200, 101, 1102];
+
+//
+Ndef(\a).play; // play to hardware output.
+Ndef(\a).fadeTime = 2; // fadeTime specifies crossfade
+// set the source
+Ndef(\a, { SinOsc.ar([350, 351.3], 0, 0.2) });
+Ndef(\a, { Pulse.ar([350, 351.3] / 4, 0.4, 0.2) });
+Ndef(\a, Pbind(\dur, 0.03, \freq, Pbrown(0, 1, 0.1, inf).linexp(0, 1, 200, 350)));
+
+Ndef(\a, { Ringz.ar(Ndef.ar(\b), [350, 351.3] * 2, 0.4) });
+Ndef(\b, { Impulse.ar([5, 7]/2, [0, 0.5], 0.15) });
+
+Ndef.clear(3); // clear all after 3 seconds
 
 
 // NDef by redFrik;

@@ -13,8 +13,6 @@ LMSC-261 & MTEC-111 are prerequisites.
 
 #### analysis how-to and 140 due
 
-#### guest: [Kosmas Giannoutakis](https://www.kosmasgiannoutakis.art/portfolio/live-coding-music-with-brain-control-interface/)
-
 #### analysis presentations
 
 #### patterns w/ nodes

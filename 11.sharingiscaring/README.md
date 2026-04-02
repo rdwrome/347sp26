@@ -5,8 +5,10 @@
 - you will have time in class to collaborate with your partner (30min per class), but the goal is for you to have such good written documentation by the end of the semester that any SuperCollisionist could play your work.
 
 ## Duos/Trio:
-- Massimo + Michael
-- Mariia + Ashlyn
-- Romero + Hanyoung + Lilith
+- Will/ Mike
+- Annika/KP
+- Kevin/James
+- Neil/Vanessa
+- Zoe/Dylan
 
 # DUE FOR IN-CLASS PERFORMANCE ON APRIL 30
