@@ -19,14 +19,13 @@ LMSC-261 & MTEC-111 are prerequisites.
 
 #### scheduling w/streams
 
+#### guis & controllerism
+
 #### modeling 
 
-#### guis & controllerism
-- final project proposal due
+#### multichannel
 
 #### OPTIONAL CONCERT APRIL 18 
-
-#### multichannel
 
 #### sharing is caring
 - final project presentations
